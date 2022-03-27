@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tbQuestionText = new System.Windows.Forms.TextBox();
             this.tbAnswer = new System.Windows.Forms.TextBox();
-            this.btnNew = new System.Windows.Forms.Button();
             this.btnCheck = new System.Windows.Forms.Button();
             this.tbQuestionsCorrect = new System.Windows.Forms.TextBox();
             this.tbQuestionsCorrectDisplay = new System.Windows.Forms.TextBox();
@@ -64,13 +63,6 @@
             resources.ApplyResources(this.tbAnswer, "tbAnswer");
             this.tbAnswer.Name = "tbAnswer";
             this.tbAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbAnswer_KeyDown);
-            // 
-            // btnNew
-            // 
-            resources.ApplyResources(this.btnNew, "btnNew");
-            this.btnNew.Name = "btnNew";
-            this.btnNew.UseVisualStyleBackColor = true;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnCheck
             // 
@@ -144,6 +136,7 @@
             // 
             resources.ApplyResources(this.tbPercentage, "tbPercentage");
             this.tbPercentage.Name = "tbPercentage";
+            this.tbPercentage.ReadOnly = true;
             // 
             // lvCorrect
             // 
@@ -151,13 +144,25 @@
             this.chCorrectDifficultLevel,
             this.chCorrectQuestion,
             this.chCorrectAnswer});
+            resources.ApplyResources(this.lvCorrect, "lvCorrect");
             this.lvCorrect.FullRowSelect = true;
             this.lvCorrect.GridLines = true;
             this.lvCorrect.HideSelection = false;
-            resources.ApplyResources(this.lvCorrect, "lvCorrect");
             this.lvCorrect.Name = "lvCorrect";
             this.lvCorrect.UseCompatibleStateImageBehavior = false;
             this.lvCorrect.View = System.Windows.Forms.View.Details;
+            // 
+            // chCorrectDifficultLevel
+            // 
+            resources.ApplyResources(this.chCorrectDifficultLevel, "chCorrectDifficultLevel");
+            // 
+            // chCorrectQuestion
+            // 
+            resources.ApplyResources(this.chCorrectQuestion, "chCorrectQuestion");
+            // 
+            // chCorrectAnswer
+            // 
+            resources.ApplyResources(this.chCorrectAnswer, "chCorrectAnswer");
             // 
             // lvWrong
             // 
@@ -166,13 +171,29 @@
             this.chWrongQuestion,
             this.chWrongProvidedAnswer,
             this.chWrongCorrectAnswer});
+            resources.ApplyResources(this.lvWrong, "lvWrong");
             this.lvWrong.FullRowSelect = true;
             this.lvWrong.GridLines = true;
             this.lvWrong.HideSelection = false;
-            resources.ApplyResources(this.lvWrong, "lvWrong");
             this.lvWrong.Name = "lvWrong";
             this.lvWrong.UseCompatibleStateImageBehavior = false;
             this.lvWrong.View = System.Windows.Forms.View.Details;
+            // 
+            // chWrongDifficultLevel
+            // 
+            resources.ApplyResources(this.chWrongDifficultLevel, "chWrongDifficultLevel");
+            // 
+            // chWrongQuestion
+            // 
+            resources.ApplyResources(this.chWrongQuestion, "chWrongQuestion");
+            // 
+            // chWrongProvidedAnswer
+            // 
+            resources.ApplyResources(this.chWrongProvidedAnswer, "chWrongProvidedAnswer");
+            // 
+            // chWrongCorrectAnswer
+            // 
+            resources.ApplyResources(this.chWrongCorrectAnswer, "chWrongCorrectAnswer");
             // 
             // Form1
             // 
@@ -185,12 +206,12 @@
             this.Controls.Add(this.tbDifficulty);
             this.Controls.Add(this.cbDifficultySelection);
             this.Controls.Add(this.btnCheck);
-            this.Controls.Add(this.btnNew);
             this.Controls.Add(this.tbAnswer);
             this.Controls.Add(this.tbQuestionText);
             this.Name = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -202,7 +223,6 @@
 
         private System.Windows.Forms.TextBox tbQuestionText;
         private System.Windows.Forms.TextBox tbAnswer;
-        private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.TextBox tbQuestionsCorrect;
         private System.Windows.Forms.TextBox tbQuestionsCorrectDisplay;

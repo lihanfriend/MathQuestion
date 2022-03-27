@@ -122,7 +122,7 @@
     <value>Microsoft Sans Serif, 20pt</value>
   </data>
   <data name="tbQuestionText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 169</value>
+    <value>51, 169</value>
   </data>
   <data name="tbQuestionText.Size" type="System.Drawing.Size, System.Drawing">
     <value>316, 38</value>
@@ -145,13 +145,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbQuestionText.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="tbAnswer.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20pt</value>
   </data>
   <data name="tbAnswer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>404, 169</value>
+    <value>373, 169</value>
   </data>
   <data name="tbAnswer.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 38</value>
@@ -169,40 +169,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tbAnswer.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="btnNew.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20pt</value>
-  </data>
-  <data name="btnNew.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 12</value>
-  </data>
-  <data name="btnNew.Size" type="System.Drawing.Size, System.Drawing">
-    <value>422, 50</value>
-  </data>
-  <data name="btnNew.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btnNew.Text" xml:space="preserve">
-    <value>Start! </value>
-  </data>
-  <data name="&gt;&gt;btnNew.Name" xml:space="preserve">
-    <value>btnNew</value>
-  </data>
-  <data name="&gt;&gt;btnNew.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnNew.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnNew.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="btnCheck.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 20pt</value>
   </data>
   <data name="btnCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 109</value>
+    <value>297, 109</value>
   </data>
   <data name="btnCheck.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 39</value>
@@ -212,9 +185,6 @@
   </data>
   <data name="btnCheck.Text" xml:space="preserve">
     <value>Check!</value>
-  </data>
-  <data name="btnCheck.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;btnCheck.Name" xml:space="preserve">
     <value>btnCheck</value>
@@ -232,7 +202,7 @@
     <value>Microsoft Sans Serif, 20pt</value>
   </data>
   <data name="tbQuestionsCorrect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 16</value>
+    <value>38, 19</value>
   </data>
   <data name="tbQuestionsCorrect.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 38</value>
@@ -259,7 +229,7 @@
     <value>Microsoft Sans Serif, 20pt</value>
   </data>
   <data name="tbQuestionsCorrectDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 60</value>
+    <value>38, 63</value>
   </data>
   <data name="tbQuestionsCorrectDisplay.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 38</value>
@@ -283,7 +253,7 @@
     <value>Microsoft Sans Serif, 20pt</value>
   </data>
   <data name="tbTotalQuestions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 127</value>
+    <value>38, 116</value>
   </data>
   <data name="tbTotalQuestions.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 38</value>
@@ -310,7 +280,7 @@
     <value>Microsoft Sans Serif, 20pt</value>
   </data>
   <data name="tbTotalQuestionsDisplay.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 171</value>
+    <value>38, 160</value>
   </data>
   <data name="tbTotalQuestionsDisplay.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 38</value>
@@ -364,7 +334,7 @@
     <value>10</value>
   </data>
   <data name="cbDifficultySelection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>205, 109</value>
+    <value>174, 109</value>
   </data>
   <data name="cbDifficultySelection.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 39</value>
@@ -388,7 +358,7 @@
     <value>Microsoft Sans Serif, 20pt</value>
   </data>
   <data name="tbDifficulty.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 110</value>
+    <value>51, 110</value>
   </data>
   <data name="tbDifficulty.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 38</value>
@@ -411,18 +381,6 @@
   <data name="&gt;&gt;tbDifficulty.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="tbPercentage.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 80pt</value>
-  </data>
-  <data name="tbPercentage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 55</value>
-  </data>
-  <data name="tbPercentage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 128</value>
-  </data>
-  <data name="tbPercentage.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
   <data name="&gt;&gt;tbPercentage.Name" xml:space="preserve">
     <value>tbPercentage</value>
   </data>
@@ -436,10 +394,10 @@
     <value>0</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 221</value>
+    <value>39, 221</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 224</value>
+    <value>434, 314</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -459,11 +417,38 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="tbPercentage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 60pt</value>
+  </data>
+  <data name="tbPercentage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 210</value>
+  </data>
+  <data name="tbPercentage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 98</value>
+  </data>
+  <data name="tbPercentage.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;tbPercentage.Name" xml:space="preserve">
+    <value>tbPercentage</value>
+  </data>
+  <data name="&gt;&gt;tbPercentage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbPercentage.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;tbPercentage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lvCorrect.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
   <data name="lvCorrect.Location" type="System.Drawing.Point, System.Drawing">
-    <value>612, 0</value>
+    <value>500, 0</value>
   </data>
   <data name="lvCorrect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 580</value>
+    <value>373, 580</value>
   </data>
   <data name="lvCorrect.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -479,6 +464,21 @@
   </data>
   <data name="&gt;&gt;lvCorrect.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="chCorrectDifficultLevel.Text" xml:space="preserve">
+    <value>Difficulty</value>
+  </data>
+  <data name="chCorrectQuestion.Text" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="chCorrectQuestion.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="chCorrectAnswer.Text" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="lvWrong.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
   </data>
   <data name="lvWrong.Location" type="System.Drawing.Point, System.Drawing">
     <value>931, 0</value>
@@ -500,6 +500,21 @@
   </data>
   <data name="&gt;&gt;lvWrong.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="chWrongDifficultLevel.Text" xml:space="preserve">
+    <value>Difficulty</value>
+  </data>
+  <data name="chWrongQuestion.Text" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="chWrongQuestion.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="chWrongProvidedAnswer.Text" xml:space="preserve">
+    <value>Provided Answer</value>
+  </data>
+  <data name="chWrongCorrectAnswer.Text" xml:space="preserve">
+    <value>Correct Answer</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

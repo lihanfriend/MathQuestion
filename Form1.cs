@@ -28,14 +28,12 @@ namespace math
 
             
             tbQuestionText.Text = qTest;
-            tbAnswer.ReadOnly = false;
             tbAnswer.Focus();
         }
 
         private void btnNew_Click(object sender, EventArgs e)
         {
             New_Question();
-            btnNew.Visible = false;
         }
 
         private void PlaySound(string soundFile, ErrorCode condition) 
@@ -95,12 +93,13 @@ namespace math
             {
                 tbTotalQuestionsDisplay.Text = TotalQuestions.ToString();
 
-                string[] questionItems = new string[] { MQ.DifficultyLevel.ToString(), MQ.QuestionText, MQ.CorrectAnswer.ToString(), MQ.ProvidedAnswer.ToString() };
+                string[] questionItems = new string[] { MQ.DifficultyLevel.ToString(), MQ.QuestionText, MQ.ProvidedAnswer.ToString(), MQ.CorrectAnswer.ToString() };
                 lvWrong.Items.Add(new ListViewItem(questionItems));
                 PlaySound(@"soundWrong.wav", ErrorCode.Wrong);
             }
 
             tbAnswer.Text = "";
+            tbPercentage.Text = ((int)((double)CorrectAnswers / TotalQuestions * 100)).ToString() + "%";
 
             New_Question();
         }
@@ -108,8 +107,6 @@ namespace math
         private void Form1_Load(object sender, EventArgs e)
         {
             cbDifficultySelection.SelectedIndex = 0;
-            tbAnswer.ReadOnly = true;
-            btnCheck.Visible = true;
         }
 
         private void tbAnswer_KeyDown(object sender, KeyEventArgs e)
@@ -123,6 +120,32 @@ namespace math
         private void cbDifficultySelection_SelectedIndexChanged(object sender, EventArgs e)
         {
             New_Question();
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            int newWidthForCorrectList = (this.Width - 500 -30) / 11 * 4;
+            lvCorrect.Height = this.Height - 100;
+            if (newWidthForCorrectList > 200)
+            {
+                lvCorrect.Width = newWidthForCorrectList;
+                lvCorrect.Columns[0].Width = newWidthForCorrectList / 4 * 1;
+                lvCorrect.Columns[1].Width = newWidthForCorrectList / 4 * 2;
+                lvCorrect.Columns[2].Width = newWidthForCorrectList / 4 * 1;
+            }
+
+            int newWidthForWrongList = (this.Width - 500 -30) / 11 * 7;
+            lvWrong.Height = this.Height - 100;
+            if (newWidthForWrongList > 200)
+            {
+                lvWrong.Width = newWidthForWrongList;
+                lvWrong.Location = new System.Drawing.Point(500 + lvCorrect.Width + 10, 0);
+
+                lvWrong.Columns[0].Width = newWidthForWrongList / 7 * 1;
+                lvWrong.Columns[1].Width = newWidthForWrongList / 7 * 2;
+                lvWrong.Columns[2].Width = newWidthForWrongList / 7 * 2;
+                lvWrong.Columns[3].Width = newWidthForWrongList / 7 * 2;
+            }
         }
     }
 }
